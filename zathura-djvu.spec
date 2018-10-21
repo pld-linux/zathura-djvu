@@ -12,13 +12,14 @@ BuildRequires:	cairo-devel
 BuildRequires:	djvulibre-devel
 # C11
 BuildRequires:	gcc >= 6:4.7
-BuildRequires:	glib2-devel >= 2.0
 BuildRequires:	girara-devel >= 0.1.8
+BuildRequires:	glib2-devel >= 2.0
 BuildRequires:	meson >= 0.43
 BuildRequires:	ninja
 BuildRequires:	pkgconfig
 BuildRequires:	rpmbuild(macros) >= 1.727
 BuildRequires:	zathura-devel >= 0.3.8
+Requires(post,postun):	desktop-file-utils
 Requires:	girara >= 0.1.8
 Requires:	zathura >= 0.3.8
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -46,6 +47,12 @@ rm -rf $RPM_BUILD_ROOT
 
 %clean
 rm -rf $RPM_BUILD_ROOT
+
+%post
+%update_desktop_database_post
+
+%postun
+%update_desktop_database_postun
 
 %files
 %defattr(644,root,root,755)

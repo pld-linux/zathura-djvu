@@ -1,12 +1,12 @@
 Summary:	DjVu support for zathura
 Summary(pl.UTF-8):	Obsługa DjVu dla zathury
 Name:		zathura-djvu
-Version:	0.2.8
+Version:	0.2.9
 Release:	1
 License:	BSD-like
 Group:		Applications/Publishing
 Source0:	https://pwmt.org/projects/zathura-djvu/download/%{name}-%{version}.tar.xz
-# Source0-md5:	e92d09832e8104283467caa78488b52d
+# Source0-md5:	414a6a3dd040a714f40d49ce5fcf3d7e
 URL:		https://pwmt.org/projects/zathura-djvu/
 BuildRequires:	cairo-devel
 BuildRequires:	djvulibre-devel

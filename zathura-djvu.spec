@@ -2,7 +2,7 @@ Summary:	DjVu support for zathura
 Summary(pl.UTF-8):	Obsługa DjVu dla zathury
 Name:		zathura-djvu
 Version:	0.2.9
-Release:	1
+Release:	2
 License:	BSD-like
 Group:		Applications/Publishing
 Source0:	https://pwmt.org/projects/zathura-djvu/download/%{name}-%{version}.tar.xz

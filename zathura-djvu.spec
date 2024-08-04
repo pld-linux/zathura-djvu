@@ -1,3 +1,6 @@
+%define		_zathura_api_ver	%(pkg-config --variable=apiversion zathura)
+%define		_zathura_abi_ver	%(pkg-config --variable=abiversion zathura)
+
 Summary:	DjVu support for zathura
 Summary(pl.UTF-8):	Obsługa DjVu dla zathury
 Name:		zathura-djvu
@@ -24,6 +27,8 @@ BuildRequires:	zathura-devel >= 0.3.8
 Requires(post,postun):	desktop-file-utils
 Requires:	girara >= 0.1.8
 Requires:	zathura >= 0.3.8
+Requires:	zathura(plugin-abi) = %_zathura_abi_ver
+Requires:	zathura(plugin-api) = %_zathura_api_ver
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description

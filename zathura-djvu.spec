@@ -18,6 +18,8 @@ BuildRequires:	meson >= 0.43
 BuildRequires:	ninja
 BuildRequires:	pkgconfig
 BuildRequires:	rpmbuild(macros) >= 1.736
+BuildRequires:	tar >= 1:1.22
+BuildRequires:	xz
 BuildRequires:	zathura-devel >= 0.3.8
 Requires(post,postun):	desktop-file-utils
 Requires:	girara >= 0.1.8

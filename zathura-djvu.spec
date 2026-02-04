@@ -4,18 +4,18 @@
 Summary:	DjVu support for zathura
 Summary(pl.UTF-8):	Obsługa DjVu dla zathury
 Name:		zathura-djvu
-Version:	2026.01.30
+Version:	2026.02.03
 Release:	1
 License:	BSD-like
 Group:		Applications/Publishing
 Source0:	https://pwmt.org/projects/zathura-djvu/download/%{name}-%{version}.tar.xz
-# Source0-md5:	05b770b2a929a9eb8577a3b269255b4a
+# Source0-md5:	805177f7db46e29155dfde4ca86a8062
 URL:		https://pwmt.org/projects/zathura-djvu/
 BuildRequires:	cairo-devel
 BuildRequires:	djvulibre-devel
 # C17
 BuildRequires:	gcc >= 6:8.1.0
-BuildRequires:	girara-devel >= 0.1.8
+BuildRequires:	girara-devel >= 2026.02.03
 BuildRequires:	glib2-devel >= 2.0
 BuildRequires:	meson >= 0.61
 BuildRequires:	ninja
@@ -25,7 +25,7 @@ BuildRequires:	tar >= 1:1.22
 BuildRequires:	xz
 BuildRequires:	zathura-devel >= 2026.01.30
 Requires(post,postun):	desktop-file-utils
-Requires:	girara >= 0.1.8
+Requires:	girara >= 2026.02.03
 Requires:	zathura >= 2026.01.30
 Requires:	zathura(plugin-abi) = %_zathura_abi_ver
 Requires:	zathura(plugin-api) = %_zathura_api_ver
